@@ -11,7 +11,6 @@ def index():
     if form.validate_on_submit():
         url = Url.query.filter_by(long_url=form.url.data).first()
         if url is None:
-            print(form.url.data)
             url = Url(long_url=form.url.data)
             db.session.add(url)
             db.session.flush()
