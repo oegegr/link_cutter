@@ -17,3 +17,4 @@ link_cutter/.env/bin/python link_cutter/link_cutter.py -d
 link_cutter.py has serveral options:
 * -d  Drop all tables if exsits and create new
 * -t  Generate test data in database
+* -v  Turn on debug for flask app
